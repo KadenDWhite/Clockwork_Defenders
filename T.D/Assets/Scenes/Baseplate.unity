@@ -525,8 +525,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1962828473}
   - {fileID: 911200332}
+  - {fileID: 1962828473}
   m_Father: {fileID: 372660187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7694,27 +7694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3193762658903462297, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3437541767249715032, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
-      propertyPath: m_Colors.m_NormalColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
-      propertyPath: m_Colors.m_NormalColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
-      propertyPath: m_Colors.m_NormalColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
-      propertyPath: m_Colors.m_NormalColor.r
-      value: 1
+      value: StandardTurretItem
       objectReference: {fileID: 0}
     - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7722,7 +7702,7 @@ PrefabInstance:
       objectReference: {fileID: 58023755}
     - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseStandardTurret
       objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_Pivot.x
@@ -7750,7 +7730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 108.7488
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_SizeDelta.y
@@ -11850,8 +11830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3cff4d6ee7a364f974c35e9c7607ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefab: {fileID: 582984961045869640, guid: 6163d2e6c04f6924f84f9045293a1b48, type: 3}
-  anotherTurretPrefab: {fileID: 582984961045869640, guid: c4561c856ced5624ca0108c6ad0bcd99, type: 3}
+  standardTurretPrefab: {fileID: 7675925850794223223, guid: 5effa9dea214649498a96974e9078857, type: 3}
+  missleLauncherPrefab: {fileID: 9056178109880288891, guid: 1352fd0f6d4806d4f82d30407de4e53b, type: 3}
 --- !u!1001 &1425986396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17631,14 +17611,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 58023751}
     m_Modifications:
+    - target: {fileID: 214746299555866503, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_MinWidth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 214746299555866503, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_IgnoreLayout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214746299555866503, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_FlexibleWidth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 214746299555866503, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_FlexibleHeight
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 214746299555866503, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 214746299555866503, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 3193762658903462297, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_Name
-      value: StandardTurretItem
+      value: MissleLauncherItem
       objectReference: {fileID: 0}
+    - target: {fileID: 3437541767249715032, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4734e82961fae9f40841a201e21c178b, type: 3}
     - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 58023755}
+    - target: {fileID: 5588780892913217793, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PurchaseMissleLauncher
+      objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -17665,11 +17677,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 108.7488
+      value: 96.4442
       objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50.289
+      value: 59.6321
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3994784
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3994784
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3994784
       objectReference: {fileID: 0}
     - target: {fileID: 8514600240342402782, guid: a57532cc9c542504ea5668dbd4863018, type: 3}
       propertyPath: m_LocalPosition.x
